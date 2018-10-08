@@ -1,0 +1,6 @@
+<ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^profilPatients([\d]+).html$ pdo2/profilPatients.php?id=$1
+ErrorDocument 404 /index.php 
+</ifModule>
+
